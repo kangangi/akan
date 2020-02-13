@@ -9,11 +9,13 @@
   <body>
     <div class="container">
       <h1>Find out your Akan Name!</h1>
-      <script scr="js/scripts.js" type="text/javascript"></script>
+
       <h2>But first, What is an Akan name?</h2>
       <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person.</p>
-      <h2>Please enter your Birthday Details!</h2>
+
       <form>
+        <script src="js/scripts.js"></script>
+        <h2>Please enter your Birthday Details!</h2>
         <div class="form-group">
           <label for="dd">Enter your date of Birth</label>
           <input type="number" class="form-control" id="dd" placeholder="DD">
@@ -33,20 +35,39 @@
         <label for="yy">Enter the last two digits of your year of birth</label>
         <input type="number" class="form-control" id="yy" placeholder="YY">
       </div>
-    </form>
 
       <h2>Gender (Select one please)</h2>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="male">
-        <label class="form-check-label" for="male"> Male
-        </label>
-        </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="FEMALE" id="female">
-        <label class="form-check-label" for="female"> Female
-        </label>
+      <div class="form-group">
+        <div>
+        <label for="radio"class="radio-inline">
+          <input
+        type="radio"
+        name="gender"
+        id="male"
+        value="male"
+        required/>
+         Male</label>
+         <br>
+
+        <label for="radio"class="radio-inline">
+          <input
+         type="radio"
+         name="gender"
+          id="female"
+          value="female"
+          required/>
+        Female</label>
       </div>
-      <button type="button" class="btn btn-outline-success">Submit</button>
+</div>
+
+      <button onclick="readData()" type= "submit" class="btn btn-success" id="Submit" >Submit</button>
+    </form>
+
+
+
+
+
+
     </div>
 
 
