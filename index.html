@@ -22,25 +22,32 @@
         <form>
           <div class="jumbotron">
           <h2>Please enter your Birthday Details!</h2>
+
           <div class="form-group">
-            <label for="dd">Enter your date of Birth</label>
-            <input type="number" class="form-control" id="dd" placeholder="DD" required>
-          </div>
-          <div class="form-group">
-            <label for="mm">Enter your month of Birth</label>
-            <input type="number" class="form-control" id="mm" placeholder="MM" required>
-          </div>
-          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6"
+            <label for="dd">Enter your date of Birth
+            <input type="number" class="form-control" id="dd" placeholder="DD" min="0" max="31" required>
+          </label>
+        </div>
+            <div class="col-md-6"
+            <label for="mm">Enter your month of Birth
+            <input type="number" class="form-control" id="mm" placeholder="MM" min="0" max="12" required>
+          </label>
+        </div>
+      </div>
             <label for="yy">Enter your year of birth</label>
             <input type="number" class="form-control" id="yy" placeholder="YYYY" required>
           </div>
           <h2>Gender (Select one please)</h2>
           <div class="form-group">
             <label for="radio"class="radio-inline">
-            <input type="radio" name="gender" id="male" value="male" required />Male</label>
+            <input type="radio" name="gender" id="male" value="male" required />Male
+          </label>
             <br>
             <label for="radio"class="radio-inline">
-            <input type="radio" name="gender" id="female" value="female" required />Female</label>
+            <input type="radio" name="gender" id="female" value="female" required />Female
+          </label>
           </div>
           <button onclick="readData()" type= "submit" class="btn btn-success" id="submit">Submit</button>
           </div>

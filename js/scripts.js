@@ -10,7 +10,7 @@ var yy = document.getElementById("yy").value;
 
 if (document.getElementById("male").checked){
   var male = true;
-} else{
+}else{
   var female = true;
 }
 //Allocate akan names
@@ -19,14 +19,15 @@ var females = ["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var birthday = new Date(mm + '/' + dd + '/' + yy);
 var day1 = birthday.getDay();
 
-//Validity
-if (dd <= 0 || dd >= 31){
+//Validitation
+  if (dd <= 0 || dd >= 31){
   document.getElementById("display").innerText = "Sorry your date is invalid, please enter a valid date!"
-} else if(mm <= 0 || mm >= 13){
+  } else if(mm <= 0 || mm >= 13){
   document.getElementById("display").innerText = "Sorry your month is invalid, please enter a valid month!"
-} else if (male === true){
+  }else if (male === true){
   document.getElementById("display").innerText = "Your Akan name is " + males[day1] + "!"
-} else{
-  document.getElementById("display").innerText = "Your Akan name is " + females[day1] + "!"
+  }else{
+    document.getElementById("display").innerText = "Your Akan name is " + females[day1] + "!"
+  }
 }
 }
