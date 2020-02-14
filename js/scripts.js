@@ -30,4 +30,3 @@ var day1 = birthday.getDay();
     document.getElementById("display").innerText = "Your Akan name is " + females[day1] + "!"
   }
 }
-}
