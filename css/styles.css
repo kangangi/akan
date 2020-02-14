@@ -1,17 +1,27 @@
 h1{
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-family: fantasy;
-  color: saddlebrown;
+  color: darkslategray;
 }
 body{
-  background-color: bisque;
+  background-color: darkkhaki;
 }
-.change {
+.akan p {
   text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+.akan form{
+  text-align: justify;
+}
+.akan h2{
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size:25px;
 }
 
-.change form {
-  text-align: justify;
+.response{
   background-color: white;
 }

@@ -4,67 +4,44 @@
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-
   </head>
   <body>
     <div class="container">
       <h1>DISCOVER YOUR AKAN NAME</h1>
-      <div class="change">
-
-
-      <h2>But first, What is an Akan name?</h2>
-      <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person.</p>
-
-      <form>
-        <script src="js/scripts.js"></script>
-        <h2>Please enter your Birthday Details!</h2>
-        <div class="form-group">
-          <label for="dd">Enter your date of Birth</label>
-          <input type="number" class="form-control" id="dd" placeholder="DD">
-        </div>
-
-        <div class="form-group">
-          <label for="mm">Enter your month of Birth</label>
-          <input type="number" class="form-control" id="mm" placeholder="MM">
-        </div>
-
-      <div class="form-group">
-        <label for="yy">Enter your year of birth</label>
-        <input type="number" class="form-control" id="yy" placeholder="YYYY">
+      <div class="akan">
+        <h2>But first, What is an Akan name?</h2>
+        <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person.</p>
       </div>
+      <p id="display" class="response">
 
-      <h2>Gender (Select one please)</h2>
-      <div class="form-group">
-        <div>
-        <label for="radio"class="radio-inline">
-          <input
-        type="radio"
-        name="gender"
-        id="male"
-        value="male"
-        />
-         Male</label>
-         <br>
-
-        <label for="radio"class="radio-inline">
-          <input
-         type="radio"
-         name="gender"
-          id="female"
-          value="female"
-          />
-        Female</label>
-      </div>
-</div>
-
-      <button onclick="readData()" type= "submit" class="btn btn-success" id="Submit" >Submit</button>
-    </form>
-  </div>
-</div>
-
-
-
-    </script>
-  </body>
-
-</html>
+      </p>
+        <form>
+          <div class="jumbotron">
+          <h2>Please enter your Birthday Details!</h2>
+          <div class="form-group">
+            <label for="dd">Enter your date of Birth</label>
+            <input type="number" class="form-control" id="dd" placeholder="DD" required>
+          </div>
+          <div class="form-group">
+            <label for="mm">Enter your month of Birth</label>
+            <input type="number" class="form-control" id="mm" placeholder="MM" required>
+          </div>
+          <div class="form-group">
+            <label for="yy">Enter your year of birth</label>
+            <input type="number" class="form-control" id="yy" placeholder="YYYY" required>
+          </div>
+          <h2>Gender (Select one please)</h2>
+          <div class="form-group">
+            <label for="radio"class="radio-inline">
+            <input type="radio" name="gender" id="male" value="male" required,/>Male</label>
+            <br>
+            <label for="radio"class="radio-inline">
+            <input type="radio" name="gender" id="female" value="female" required />Female</label>
+          </div>
+          <button onclick="readData()" type= "submit" class="btn btn-success" id="submit">Submit</button>
+          </div>
+          </form>
+          </div>
+          <script src="js/scripts.js"></script>
+     </body>
+    </html>
