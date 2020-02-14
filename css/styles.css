@@ -8,7 +8,7 @@ body{
   background-color: darkkhaki;
 }
 .akan p {
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
   font-style: italic;
 }
@@ -23,9 +23,13 @@ body{
   font-weight: bold;
   font-size:25px;
 }
+.akan a{
+  color: darkslategray;
+}
 
 .response{
   font-size: 25px;
+  background-color: white;
   font-family: cursive;
   color: darkkhaki;
   text-align: center;
