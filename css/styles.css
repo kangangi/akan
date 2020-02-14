@@ -13,7 +13,9 @@ body{
   font-style: italic;
 }
 .akan form{
-  text-align: justify;
+  text-align: center;
+  width: 900px;
+  vertical-align: middle;
 }
 .akan h2{
   text-align: center;
@@ -23,5 +25,8 @@ body{
 }
 
 .response{
-  background-color: white;
+  font-size: 25px;
+  font-family: cursive;
+  color: darkkhaki;
+  text-align: center;
 }
